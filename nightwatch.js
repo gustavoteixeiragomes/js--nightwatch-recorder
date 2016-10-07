@@ -360,7 +360,7 @@ NightwatchRenderer.prototype.checkPageTitle = function(item) {
 
 NightwatchRenderer.prototype.checkPageLocation = function(item) {
   var url = this.regexp_escape(item.url);
-  this.stmt('.assert.urlContains("' + url + '")');
+  this.stmt('.assert.urlContains("' + url + '")', 3);
 }
 
 NightwatchRenderer.prototype.checkTextPresent = function(item) {
