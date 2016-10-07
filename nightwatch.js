@@ -355,7 +355,7 @@ NightwatchRenderer.prototype.comment = function(item) {
 
 NightwatchRenderer.prototype.checkPageTitle = function(item) {
   var title = this.pyrepr(item.title, true);
-  this.stmt('.assert.title(' + title + ')', 3);
+  this.stmt('.assert.title("' + title + '")', 3);
 }
 
 NightwatchRenderer.prototype.checkPageLocation = function(item) {
