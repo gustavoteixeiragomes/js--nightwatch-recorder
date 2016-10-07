@@ -406,7 +406,7 @@ NightwatchRenderer.prototype.checkHref = function(item) {
   } else {
     selector = item.info.selector+'[href='+ href +']';
   }
-  this.stmt('.assert.elementPresent('+selector+')');
+  this.stmt('.assert.elementPresent('+selector+')', 3);
 }
 
 NightwatchRenderer.prototype.checkEnabled = function(item) {
